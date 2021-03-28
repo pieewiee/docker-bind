@@ -1,17 +1,17 @@
-FROM ubuntu:focal-20200423 AS add-apt-repositories
+FROM debian:latest AS add-apt-repositories
 
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y gnupg \
  && apt-key adv --fetch-keys http://www.webmin.com/jcameron-key.asc \
  && echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
 
-FROM ubuntu:focal-20200423
+FROM debian:latest
 
-LABEL maintainer="sameer@damagehead.com"
+LABEL maintainer="till.niederauer@googlemail.com"
 
 ENV BIND_USER=bind \
-    BIND_VERSION=9.16.1 \
-    WEBMIN_VERSION=1.941 \
+    BIND_VERSION=9.16.6 \
+    WEBMIN_VERSION=1.973 \
     DATA_DIR=/data
 
 COPY --from=add-apt-repositories /etc/apt/trusted.gpg /etc/apt/trusted.gpg
