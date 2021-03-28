@@ -49,13 +49,13 @@ Automated builds of the image are available on [Dockerhub](https://hub.docker.co
 > **Note**: Builds are also available on [Quay.io](https://quay.io/repository/sameersbn/bind)
 
 ```bash
-docker pull sameersbn/bind:9.16.1-20200524
+docker pull pieewiee/bind:latest
 ```
 
 Alternatively you can build the image yourself.
 
 ```bash
-docker build -t sameersbn/bind github.com/sameersbn/docker-bind
+docker build -t pieewiee/bind github.com/pieewiee/docker-bind
 ```
 
 ## Quickstart
@@ -124,7 +124,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull sameersbn/bind:9.16.1-20200524
+  docker pull pieewiee/bind:latest
   ```
 
   2. Stop the currently running image:
@@ -144,7 +144,7 @@ To upgrade to newer releases:
   ```bash
   docker run -name bind -d \
     [OPTIONS] \
-    sameersbn/bind:9.16.1-20200524
+    pieewiee/bind:latest
   ```
 
 ## Shell Access
