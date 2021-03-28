@@ -1,7 +1,7 @@
 FROM debian:latest AS add-apt-repositories
 
 RUN apt-get update \
- && DEBIAN_FRONTEND=noninteractive apt-get install -y gnupg1 \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y gnupg1 wget \
  && wget http://www.webmin.com/jcameron-key.asc \
  && apt-key add jcameron-key.asc \
  && echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
