@@ -11,7 +11,7 @@ FROM debian:latest
 LABEL maintainer="till.niederauer@googlemail.com"
 
 ENV BIND_USER=bind \
-    BIND_VERSION=9.16.6 \
+    BIND_VERSION=9.11.5.P4+dfsg-5.1+deb10u3 \
     WEBMIN_VERSION=1.973 \
     DATA_DIR=/data
 
