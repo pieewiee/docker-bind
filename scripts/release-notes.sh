@@ -25,22 +25,19 @@ fi
 cat <<EOF
 ${NOTABLE_CHANGES}
 
-## Docker Images for sameersbn/bind:${RELEASE}
+## Docker Images for pieewiee/bind:${RELEASE}
 
-- [docker.io](https://hub.docker.com/r/sameersbn/bind/tags)
-- [quay.io](https://quay.io/repository/sameersbn/bind?tag=${RELEASE}&tab=tags)
-
+- [docker.io](https://hub.docker.com/r/pieewiee/bind/tags)
 ## Installation
 
-For installation and usage instructions please refer to the [README](https://github.com/sameersbn/docker-bind/blob/${RELEASE}/README.md)
+For installation and usage instructions please refer to the [README](https://github.com/pieewiee/docker-bind/blob/${RELEASE}/README.md)
 
 ## Contributing
 
 If you find this image useful here's how you can help:
 
 - Send a Pull Request with your awesome new features and bug fixes
-- Be a part of the community and help resolve [issues](https://github.com/sameersbn/docker-bind/issues)
-- Support the development of this image with a [donation](http://www.damagehead.com/donate/)
+- Be a part of the community and help resolve [issues](https://github.com/pieewiee/docker-bind/issues)
 
 ## Changelog
 
