@@ -246,7 +246,6 @@ jobs:
           image: pieewiee/bind
           tag: ${CIRCLE_TAG:-latest}
 
-
   release:
     executor:
       name: go/default
