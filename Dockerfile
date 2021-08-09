@@ -11,8 +11,8 @@ FROM debian:latest
 LABEL maintainer="till.niederauer@googlemail.com"
 
 ENV BIND_USER=bind \
-    BIND_VERSION=9.11.5.P4+dfsg-5.1+deb10u3 \
-    WEBMIN_VERSION=1.973 \
+    BIND_VERSION=9.11.5.P4+dfsg-5.1+deb10u5 \
+    WEBMIN_VERSION=1.979 \
     DATA_DIR=/data
 
 COPY --from=add-apt-repositories /etc/apt/trusted.gpg /etc/apt/trusted.gpg
